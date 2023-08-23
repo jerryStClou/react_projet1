@@ -3,13 +3,16 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Bouton from './components/ui/Bouton'
-import { Header } from './components/containers/Header'
+import Header from './components/containers/Header'
 import { Footer } from './components/containers/Footer'
 import ContactForm from './components/containers/ContactForm/ContactForm'
 import Moyenne from './components/containers/Moyenne'
 import Todos from './components/containers/Todos'
 import Routine from './components/containers/Routine'
 import Compteur from './components/containers/Compteur'
+import ChangeCouleur from './components/containers/ChangeCouleur'
+import Aleatoire from './components/containers/Aleatoire'
+import Accordion from './components/containers/Accordion/Accordion'
 const taches = [
   {
       title: "Aller manger",
@@ -37,12 +40,15 @@ function App() {
       {/* <h1>Vite + React</h1> */}
       {/* <Bouton couleur="royalblue">Contactez-nous</Bouton> */}
       {/* {Header({children:"titre1", image:"", nomBouton:"Valider", paragraphe:"para3"})} */}
-      {/* <Header></Header> */}
+      <Header></Header>
       <Moyenne nombres={[12,8,15,19]}/>
       <ContactForm/>
       <Todos tasks={taches}/>
       <Routine/>
       <Compteur/>
+      <ChangeCouleur/>
+      <Aleatoire/>
+      <Accordion/>
       {/* <Footer></Footer> */}
 
 

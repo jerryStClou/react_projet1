@@ -1,0 +1,52 @@
+.navbar
+{
+    display: flex;
+    background: purple;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.menuImage
+{
+    display: none;
+}
+
+.menu{
+    display: flex;
+    gap:10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.lien
+{
+    list-style: none;
+}
+
+.lien a{
+    color:whitesmoke;
+}
+
+.menuContainer
+{
+    display: flex;
+    gap:20px;
+}
+
+
+@media (max-width:800px)
+{
+    .menuImage
+    {
+        display: block;
+        width: 30px;
+    }
+    .menu{
+        position: absolute;
+        top:50px;
+        left: -100px;
+        flex-direction: column;
+        background: purple;
+        min-width: 75vh;
+        min-height: 100vh;
+    }
+}

@@ -16,7 +16,7 @@ function incremente()
     return (
     <div>
         <h2>{compteur}</h2>
-        <Bouton onClick={decremente} couleur='lightred'>-1</Bouton>
+        <Bouton onClick={decremente} couleur='red'>-1</Bouton>
         <Bouton onClick={incremente} couleur='lightgreen'>+1</Bouton>
 
     </div>
