@@ -16,8 +16,8 @@ export default function Moyenne({nombres})
         <div>
             <h2>Votre moyenne est de {calculMoyenne()}</h2>
             <ul>
-                {nombres.map((nombre) =>{
-                    return <li style={{ color: nombre <10 ? "red" : "green" }}>{nombre}</li>
+                {nombres.map((nombre,position) =>{
+                    return <li key={position} style={{ color: nombre <10 ? "red" : "green" }}>{nombre}</li>
                 })}
             </ul>
             </div>

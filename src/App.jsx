@@ -12,7 +12,11 @@ import Routine from './components/containers/Routine'
 import Compteur from './components/containers/Compteur'
 import ChangeCouleur from './components/containers/ChangeCouleur'
 import Aleatoire from './components/containers/Aleatoire'
-import Accordion from './components/containers/Accordion/Accordion'
+import Accordion from './components/containers/Accordion'
+import NombrePaire from './components/containers/NombrePaire'
+import LoginForm from './components/containers/LoginForm'
+import GOT from './components/containers/GOT'
+import News from './components/containers/News'
 const taches = [
   {
       title: "Aller manger",
@@ -48,7 +52,11 @@ function App() {
       <Compteur/>
       <ChangeCouleur/>
       <Aleatoire/>
-      <Accordion/>
+      <Accordion  titre="Un titre" contenu="Du contenu"/>
+      <NombrePaire/> <br />
+      <LoginForm /><br /><br />
+      <GOT/><br /><br />
+      <News/>
       {/* <Footer></Footer> */}
 
 
