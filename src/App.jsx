@@ -55,7 +55,7 @@ function App() {
       <Accordion  titre="Un titre" contenu="Du contenu"/>
       <NombrePaire/> <br />
       <LoginForm /><br /><br />
-      <GOT/><br /><br />
+      {/* <GOT/><br /><br /> */}
       <News/>
       {/* <Footer></Footer> */}
 

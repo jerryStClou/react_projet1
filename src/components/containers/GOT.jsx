@@ -12,10 +12,15 @@ export default function GOT() {
         setPersonnages(data);
 
         // useEffect permet d'executer des fonctions asynchrone quand le composant et mis dans le DOM
-        useEffect(() => {
-            getPersonnages();
-        }, []);
+        // useEffect(() => {
+        //     getPersonnages();
+        // }, []);
     }
+
+    useEffect(() => {
+		getPersonnages();
+	}, []);
+
     return (
     <div>
         {personnages.map((personnages)=>{
